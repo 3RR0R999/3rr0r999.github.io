@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Asegura que html y body ocupen toda la pantalla */
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+/* Hace que header y main ocupen todo el espacio disponible */
+header, main {
+    background-color: black;
+    width: 100%;
+}
+
+/* Si quieres que header y main juntos ocupen toda la altura */
+header {
+    height: 20vh; /* Por ejemplo, 20% de la altura de la ventana */
+}
+
+main {
+    height: 80vh; /* El resto del espacio */
+}
