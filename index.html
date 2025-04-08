@@ -1,40 +1,279 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="refresh" content="5" >
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" href="styles.css">
-  <title>H</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hugo BM</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <div>
-      <nav>
-        <a href="#Home">Inicio</a> 
-        <a href="#About">Sobre mí</a> 
-        <a href="#Resume">Contacto</a>
-        <a href="#Contacto">Contacto</a>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <section id="inicio">
-      <h2>Inicio</h2>
-      <p>Bienvenido a la página.</p>
+    <nav id="navbar">
+        <div class="container">
+            <a href="#" class="logo">Hugo Barroso Muñoz</a>
+            
+            <div class="nav-links">
+                <a href="#landpage" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#resume" class="nav-link">Resume</a>
+            </div>
+            
+            <a href="https://linkedin.com/in/hugobarrosomuñoz" target="_blank" rel="noopener noreferrer" class="social-icon" >
+                <i class="fab fa-linkedin" ></i>
+            </a>
+        </div>
+    </nav>
+
+    <section id="landpage" class="landpage-section">
+        <div class="bg-elements">
+            <div class="bg-circle circle-1"></div>
+            <div class="bg-circle circle-2"></div>
+        </div>
+        
+        <div class="container">
+            <div class="landpage-content">
+                <h1 class="landpage-title animate-on-load">Computer Science Engineer</h1>
+                <p class="landpage-subtitle animate-on-load">Dedication and passion for technology</p>
+                <div class="cta-button animate-on-load">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <a href="#about">
+                <i class="fas fa-arrow-down"></i>
+            </a>
+        </div>
     </section>
-  
-    <section id="about">
-      <h2>Sobre mí</h2>
-      <p>Información personal y profesional.</p>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Who I Am</h3>
+                    <p>
+                        I'm a passionate Computer Science Engineer graduating this year, with experience ranging from low level like C or assembly 
+                        to high level such as Vue.js or Django.
+                        I love efficiency and optimizations
+                    </p>
+                    <p>
+                        My journey in computer science began in high school with IT subject. 
+                        Today, I combine technical knowledge with creative thinking in the projects I'm in.
+                    </p>
+                    <p>
+                        When I'm not coding, you can find me enjoying my hobbies such as martial arts, exploring the world, photography or playing piano.
+                    </p>
+                </div>
+                
+                <div class="skills-container">
+                    <h3>My Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">C</div>
+                        <div class="skill-item">Python</div>
+                        <div class="skill-item">Hardware</div>
+                        <div class="skill-item">Assembly</div>
+                        <div class="skill-item">Java</div>
+                        <div class="skill-item">SQL</div>
+                        <div class="skill-item">Network Security</div>
+                        <div class="skill-item">Team Worker</div>
+                        <div class="skill-item">Problem Solving</div>
+                        <div class="skill-item">Analytical Thinking</div>
+                        <div class="skill-item">Git</div>
+                        <div class="skill-item">Docker</div>
+                        <div class="skill-item">Agile</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-  
-    <section id="contacto">
-      <h2>Contacto</h2>
-      <p>Escríbeme a mi correo.</p>
+
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Projects</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">
+                    Here are some of my recent projects.
+                </p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/chess.jpg">
+                    </div>
+                    <div class="project-details">
+                        <h3 class="project-title">Chess Online Webpage</h3>
+                        <p class="project-description">Development of a website to play chess in real time with private rooms and pairing.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">WebSockets</span>
+                            <span class="tech-tag">Vue.js</span>
+                        </div>
+                        <!--<a href="#" class="project-link">View Project →</a>-->
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/java.jpg">
+                    </div>
+                    <div class="project-details">
+                        <h3 class="project-title">Gym Management Platform</h3>
+                        <p class="project-description">Development of a system for the complete management of a gym in Java with graphical interface and unit testing.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">JUnit</span>
+                        </div>
+                        <!--<a href="#" class="project-link">View Project →</a>-->
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/proc.jpg">
+                    </div>
+                    <div class="project-details">
+                        <h3 class="project-title">Microprocessor Creation and Simulation</h3>
+                        <p class="project-description">Development of a processor with RISC-V architecture segmented with ALU,
+                                                        registers and memory capable of executing instructions in VHDL.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">VHDL</span>
+                            <span class="tech-tag">Assembly</span>
+                            <span class="tech-tag">Hardware</span>
+                        </div>
+                        <!--<a href="#" class="project-link">View Project →</a>-->
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/server.jpg">
+                    </div>
+                    <div class="project-details">
+                        <h3 class="project-title">Web Server in C</h3>
+                        <p class="project-description">Creation of a web server from 0 in C supporting HTTP 1.1 with
+                            concurrent connections and correctly handling the concurrency of
+                            processes.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">C</span>
+                            <span class="tech-tag">HTTP</span>
+                            <span class="tech-tag">Concurrency</span>
+                        </div>
+                        <!--<a href="#" class="project-link">View Project →</a>-->
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/quantum.jpg">
+                    </div>
+                    <div class="project-details">
+                        <h3 class="project-title">Quantum Programming Gates</h3>
+                        <p class="project-description">I designed and simulated quantum gates (X, H, CNOT, Toffoli) and simple circuits at
+                                                    Qiskit, exploring superposition and entanglement.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Quantum Programming</span>
+                            <span class="tech-tag">Qiskit</span>
+                        </div>
+                        <!--<a href="#" class="project-link">View Project →</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-  </main>
+
+    <section id="resume" class="resume-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Resume</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="resume-content">
+                <div class="experience-section">
+                    <h3 class="resume-subtitle">Professional Experience</h3>
+                    
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <h4 class="timeline-title">Intership as Software Developer</h4>
+                            <div class="timeline-meta">
+                                <a class="company" href="https://kd.tech/" style="text-decoration: underline;" target="_blank" rel="noopener noreferrer">KDPOF, Madrid.</a>
+                                <span class="period">2025 - Ongoing</span>
+                            </div>
+                            <p class="timeline-description">Optimized XDR (Extended Detection and Response) based on Wazuh and implemented a web platform for collecting biometric data.</p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <h4 class="timeline-title">Summer Intership as Software Developer</h4>
+                            <div class="timeline-meta">
+                                <a class="company" href="https://www.car.upm-csic.es" style="text-decoration: underline;" target="_blank" rel="noopener noreferrer">Centre for Automatics and Robotics (CAR) CSIC, Madrid.</a>
+                                <span class="period">Summer 2024</span>
+                            </div>
+                            <p class="timeline-description">Joined a development team working on software for a rehabilitation device designed to help children with motor disabilities.</p>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <div class="education-section">
+                    <h3 class="resume-subtitle">Education</h3>
+                    
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <h4 class="timeline-title">Bachelor of Computer Science</h4>
+                            <div class="timeline-meta">
+                                <a class="institution" href="https://www.uam.es/EPS/Home.htm" style="text-decoration: underline;" target="_blank" rel="noopener noreferrer">Escuela Politecnica Superior, UAM, Spain</a>
+                                <span class="period">2021 - In Course</span>
+                            </div>
+                            <p class="timeline-description">Programming, algorithms, and data structures. Software 
+                                engineering, artificial intelligence, databases, and computer networks. It also covers mathematics, computer architecture, and web development, 
+                                along with problem-solving skills and hands-on experience with real-world projects and technologies</p>
+                        </div>
+                    </div>
+                    
+                    <div class="download-resume">
+                        <h3 class="resume-subtitle">Download</h3>
+                        <a href="#" class="btn btn-primary">
+                            <i class="fas fa-download"></i> Download Full Resume
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="copyright">
+                    <p>© <span id="current-year"></span> Hugo Barroso Muñoz. All rights reserved.</p>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/hugobarrosomuñoz" target="_blank" rel="noopener noreferrer" class="social-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
